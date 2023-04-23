@@ -1,4 +1,4 @@
 package com.example.demo.User;
 
-public interface User {
+public interface UserRepository {
 }

@@ -18,13 +18,17 @@ public class BookData {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long idUserData;
 
-    @Column(name = "Book ID", nullable = false)
+    @Column(nullable = false)
     private int bookId;
 
-    @Column(name = "Tile", nullable = false)
-    private String title;
+    @Column(nullable = false)
+    private String bookTitle;
 
-    @Column(name = "Author", nullable = false)
-    private String author;
+    @Column(nullable = false)
+    private String bookAuthor;
+
+    @Column(nullable = false)
+    private boolean bookStatus;
+
 }
 

@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Entity
 @Table(name = "LibrarySystem")
-public class BookRentalSystem {
+public class BookingData {
 
     @Id
     @Column (name = "ID")

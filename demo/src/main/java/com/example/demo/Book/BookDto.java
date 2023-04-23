@@ -1,5 +1,5 @@
 package com.example.demo.Book;
 
-public class BookDto {
+public record BookDto (String title, boolean status) {
 
 }
