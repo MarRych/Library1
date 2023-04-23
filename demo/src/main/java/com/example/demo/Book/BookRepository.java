@@ -11,6 +11,6 @@ import java.util.List;
 public interface BookRepository extends CrudRepository<BookData, Long> {
 
 
-
+   // BookData addBookToTheList(int bookId, String bookAuthor, String bookTitle, boolean bookStatus);
     BookData findBookByBookTitleAndBookStatus(final String bookTitle, final boolean bookStatus);
 }

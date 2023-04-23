@@ -1,5 +1,6 @@
 package com.example.demo.Book.BookControllers;
 
+import com.example.demo.Book.BookCreateDto;
 import com.example.demo.Book.BookDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -21,9 +22,9 @@ private final BookService bookService;
 
 
     @PostMapping
-    public ResponseEntity<Void> addBook(@RequestBody Book book) {
-        bookService.save(book);
-        return ResponseEntity.accepted().build();
+    public ResponseEntity<BookCreateDto> addBook(@RequestBody BookCreateDto bookCreateDto) {
+        bookService.save(bookCreateDto);
+        return  new ResponseEntity<>(HttpStatus.OK);
     }
 
 
