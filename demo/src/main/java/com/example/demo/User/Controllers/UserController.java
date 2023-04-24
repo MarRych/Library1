@@ -4,11 +4,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 public class UserController {
 
-  /*  private final UserService
+private final com.example.demo.User.Services.UserService userService;
 
-    //endpointy
-    @PostMapping("/user")
-    public
+@PostMapping
 
-*/
+@GetMapping
+    public ResponseEntity<UserDto> get(final @PathVariable String userName){
+    final UserDto getUserby = UserSe
+}
+
+
 }

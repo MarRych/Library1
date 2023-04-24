@@ -1,4 +1,4 @@
-package com.example.demo.User;
+package main.java.com.example.demo.User;
 
-public class UserDto {
+public record UserDto (String UserName) {
 }
